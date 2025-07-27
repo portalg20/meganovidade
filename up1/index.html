@@ -78,7 +78,7 @@
       <h2>Parabéns!</h2>
       <img src="images/star-struck.png">
       <p>Você acaba de ganhar dois <b class="text-success pulsating" style="color: green!important;">2 iPhones 16 PRO MAX + 1 AirPods</b></p>
-      <button id="resgatar-premio" href="responda.html">Resgatar seu Prêmio</button>
+      <button id="" href="responda.html">Resgatar seu Prêmio</button>
     </div>
     <audio id="confetti-audio" src="media.html"></audio>
     <audio id="roleta-audio" src="media/roleta.mp3"></audio>
@@ -298,7 +298,7 @@
 
     document.getElementById('resgatar-premio').addEventListener('click', () => {
       const queryParams = getQueryParams();
-      const baseUrl = '2';
+      const baseUrl = '2/index.html';
       const redirectUrl = queryParams ? `${baseUrl}?${queryParams}` : baseUrl;
       window.location.href = redirectUrl;
     });
