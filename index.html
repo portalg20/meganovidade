@@ -1,4 +1,5 @@
-<html lang="pt-BR"><head></head><body>﻿
+<html lang="pt-BR"><head></head><body>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Viva Sorte</title>
@@ -8,13 +9,6 @@
   <link href="css2" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap-icons.min.css">
-
-  
-  
-
-
-
-
    
     <header class="white-header">
         <div class="logo">
@@ -150,7 +144,8 @@
         <span>
             <button type="button" class="btn-contador-cotas" onclick="decrementar()">-</button>
         </span>
-        <input type="number" id="numero" class="input-contador-cotas" value="0" min="0" oninput="highlightButton()">
+        <!-- O valor inicial foi alterado para "30" -->
+        <input type="number" id="numero" class="input-contador-cotas" value="30" min="0" oninput="highlightButton()">
         <span>
             <button type="button" class="btn-contador-cotas" onclick="incrementar()">+</button>
         </span>
@@ -350,8 +345,6 @@
     });
 
 </script>
-
-  <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   
 <script>
   window.pixelId = "688603ee495ca9178f864d49";
@@ -363,5 +356,13 @@
 </script>
   
 <script src="js/latest.js" data-utmify-prevent-subids="" async="" defer=""></script>
+
+<!-- Adicionado este script para pré-selecionar a cota de 30 ao carregar a página -->
+<script>
+  window.onload = function() {
+    selecionarValor(30);
+  };
+</script>
+  
 
 </body></html>
